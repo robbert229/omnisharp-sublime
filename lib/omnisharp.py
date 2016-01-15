@@ -111,10 +111,14 @@ def create_omnisharp_server_subprocess(view):
 
     print("solution_path:%s" % solution_path)
 
-    omni_port = _available_port()
+    config_omni_port = get_settings(view, 'omnisharp_server_port')
+    if config_omni_port is not None:
+        omni_port = int(config_omni_port)
+    else:
+        omni_port = _available_port()
+
     print('omni_port:%s' % omni_port)
-    
-    
+
     config_file = get_settings(view, "omnisharp_server_config_location")
 
     if IS_EXTERNAL_SERVER_ENABLE:
