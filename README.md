@@ -1,3 +1,7 @@
+Linux & OSX | Windows
+------------|------------
+[![Build Status](https://travis-ci.org/robbert229/omnisharp-sublime.svg?branch=master)](https://travis-ci.org/robbert229/omnisharp-sublime) | [![Build status](https://ci.appveyor.com/api/projects/status/yqf0cjc6ml7ki1vy?svg=true)](https://ci.appveyor.com/project/robbert229/omnisharp-sublime-sx3jb)
+
 # OmniSharpSublime for ST3
  OmnisharpSublime is a plugin for ST3 to provide a C# development environment. It communicates with OmniSharpServer by nosami for IDE functions.
 
